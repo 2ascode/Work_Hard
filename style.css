@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: black;
+    font-family: system-ui;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;  
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1074px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.main{
+    min-height: calc(100vh - (105 +124));
+}
+
+/*header*/
+
+.header{
+    background-color: white;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+
+.header_logo{
+    display: block;
+    width: 85px;
+    height: 85px;
+    background-color: #7A96FF;
+    border-radius: 50%;
+    text-align: center;
+}
+.header_logo span{
+    line-height: 85px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.header_menu{
+    display: flex;
+    gap: 45px;
+}
+.header_menu_item{
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+}
+/*footer*/
+.footer{
+  background-color: #2D5298;
+}
+.footer_content{
+    min-height: 124px;
+    text-align: center;
+}
+.footer_content p{
+    line-height: 124px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+/*main*/
+/*banner*/
+.banner{
+    background-color: #2D5298;
+}
+
+.banner_content{
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.banner_left{
+    max-width: 400px;
+    
+}
+
+.banner_left_title{
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.banner_left_description{
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+
+.banner_left_link{
+    background-color: #7A96FF;
+    padding: 12px 56px;
+    border-radius: 35px;
+    font-weight: 600;
+}
+
+/*Service*/
+
+
+.services_title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 38px;
+    margin-bottom: 43px;
+}
+.services_text{
+    max-width: 699px;
+    margin-right: auto;
+    margin-bottom: 52px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.services_card{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.services_card_item{
+    text-align: center;
+    width: 211px;
+    padding: 27px 15px;
+    box-shadow: 0px 4px 9px 0px #00000033;
+    border-radius: 6px;
+}
+
+.services_card_item_image{
+    display: inline-block;
+    width: 64px;
+    margin-bottom: 37px;
+}
+
+.services_card_item_title{
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.services_card_item_text{
+    line-height: 25px;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    text-overflow:ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;   
+}
+.services_card_item_link{
+    margin-top: 38px;
+
+}
+
+.services_card_item_link_button{
+    background-color: #7A96FF;
+    padding: 11px 57px;
+    border-radius: 35px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.services_link{
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+    margin-bottom: 67px;
+}
+.services_link_button {
+    background-color: #7A96FF;
+    padding: 19px 100px;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*contact*/
+.contact{
+    background-color: #F2F6FC;
+}
+
+.contact_content{
+    padding-top: 54px;
+    padding: 76px;
+}
+.contact_title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.form{ display: grid;
+    gap: 20px;
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form_item{
+    display: grid;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.form_name, .form_email, .form_objet{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    border: 1px solid #535353;
+    border-radius: 15px;
+}
+
+.form_message{
+    padding-top: 20px;
+    padding-left: 25px;
+    border: 1px solid #535353;
+    border-radius: 15px;
+    min-height: 160px;
+}
+
+.form_send_link{
+    display: flex;
+    justify-content: center;
+}
+.form_send_link_button {
+    background-color: #7A96FF;
+    padding: 17px 87px;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
