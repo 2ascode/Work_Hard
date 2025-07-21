@@ -192,13 +192,12 @@ img{
     overflow: hidden;   
 }
 .services_card_item_link{
-    margin-top: 38px;
-
+    margin: 27px 0;
 }
 
 .services_card_item_link_button{
     background-color: #7A96FF;
-    padding: 11px 57px;
+    padding: 11px 56.5px;
     border-radius: 35px;
     font-weight: 600;
     line-height: 25px;
