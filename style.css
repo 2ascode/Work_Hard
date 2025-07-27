@@ -179,7 +179,6 @@ img{
 .active {
     box-shadow: 0px 4px 150px 50px #00000033 !important;
     transform: rotate3d(0, 0, 0, 45deg) scale(1.2) !important;
-    background-color: #7A96FF;
 }
 .services_card_item{
     text-align: center;

@@ -98,18 +98,29 @@ form.addEventListener("submit", function (e) {
     if (type_e_mail.test(e_mail.value)) {
       error_message[1].textContent = "";
     } else {
-      error_message[1].textContent = "nom_utilisateur@domaine.extension";
+      error_message[1].textContent =
+        "Veuillez entrer un E-mail valide(nom_utilisateur@domaine.extension).";
       form_validate = false;
     }
   }
   // gestion des erreurs dans le champ Téléphone
-  const number_only = /^[0-9]+$/;
-  if (!number_only.test(tel.value) || tel.value.length < 10 || tel.value.length > 10) {
+  if (tel.value == "") {
     error_message[2].textContent =
-      "ce champ ne peut contenir obligatoirement 10 chiffres";
+      "Champ obligatoire, Veuillez saisir votre numéro de téléphone";
     form_validate = false;
   } else {
-    error_message[2].textContent = "";
+    const number_only = /^[0-9]+$/;
+    if (
+      !number_only.test(tel.value) ||
+      tel.value.length < 10 ||
+      tel.value.length > 10
+    ) {
+      error_message[2].textContent =
+        "ce champ ne peut contenir obligatoirement 10 chiffres";
+      form_validate = false;
+    } else {
+      error_message[2].textContent = "";
+    }
   }
   if (form_validate) {
     form_sent.style.display = "block";
